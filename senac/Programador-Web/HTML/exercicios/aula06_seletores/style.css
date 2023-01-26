@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+/*seletores para HTML*/
+body{
+    font-family: initial;
+
+}
+
+h1{
+    font-size: 2em;
+    color:#019161;
+}
+
+h2{
+    color: #6067F0;
+}
+
+/*seletores pesonalizados*/
+#titulo-principal{
+    background-color: #0009bb;
+    color: rgb(136, 255, 0);
+    text-align: center;
+}
+
+.topico{
+    text-align: right;
+}
+
+.texto{
+    text-align: justify;
+    color: dimgray;
+}
+/* #=ID, .=classe*/
+
+/*seletores personalizados*/
+
+a{
+    font-weight: bold;
+    text-decoration: none;
+    color: hotpink;
+}
+
+a:visited{
+    color: darkorchid;
+}
+
+a:hover{
+    text-decoration: overline;
+}
+
+.especial:hover{
+    color: darkturquoise;
+    background-color: rgb(38, 16, 44);
+}
+
+selecto
+div > div> div > p{
+    display:none;
+}
+
+div:hover > p{
+    display: inline-block !important;
+    background-color: yellowgreen;
+}
+
+#no{
+    display: none;
+}

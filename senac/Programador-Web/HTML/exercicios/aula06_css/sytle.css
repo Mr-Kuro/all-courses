@@ -1,0 +1,19 @@
+@charset "UIF-8";
+/*Regra' @charset caso hája problemas com acentuação*/
+
+body {
+    background-color: lightcyan;
+    color: blueviolet;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12pt;
+}
+
+h1 {
+    color: chartreuse;
+}
+
+p {
+    font-family: cursive;
+    font-size: 16pt;
+    color: green;
+}

@@ -1,0 +1,61 @@
+body {
+    background: url(varios-slide.gif);
+}
+
+form {
+    margin: auto;
+    width: 418px;
+    border-radius: 15px;
+    border-color: #fff;
+    border-style: double;
+    padding: 2%;
+    background: linear-gradient(rgba(0, 0, 0, 0.952), rgba(6, 212, 133, 0.164), rgba(0, 0, 0, 0.952));
+}
+
+h1 {
+    padding: 8px;
+    color: #fff;
+}
+
+div {
+    size: 85px;
+    padding: 3%;
+    color: #fff;
+}
+
+input {
+    margin: auto;
+    width: 350px;
+    border-radius: 15px;
+    padding: 5px;
+    background: rgba(0, 255, 242, 0.205);
+    color: #fff;
+    font-size: 16px;
+}
+
+input:focus{
+    color: rgb(192, 148, 212);
+    border-radius: 15px;
+    border-color: (192, 148, 212);
+    border-style: solid;
+}
+
+input:invalid {
+    color: red;
+}
+
+#submit {
+    width: 180px;
+    margin-left: 100px;
+}
+
+#tmu {
+    margin-left: 128px;
+}
+div > p {
+    display: none;
+}
+
+div:hover > p {
+    display: block;
+}

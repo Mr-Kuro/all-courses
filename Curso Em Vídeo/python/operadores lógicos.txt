@@ -1,0 +1,4 @@
+int= inteiros
+float= reais, numeros de ponto flutuante
+bool= lógicos, boleano
+str= caractere/string

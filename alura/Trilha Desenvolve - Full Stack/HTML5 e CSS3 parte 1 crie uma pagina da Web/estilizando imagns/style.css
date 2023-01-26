@@ -1,0 +1,19 @@
+body {
+  background: #cccccc;
+}
+
+p {
+  color: #705454;
+}
+
+em > strong {
+  color: coral;
+}
+
+#missao {
+  font-size: 20px;
+}
+
+#banner {
+  width: 100%
+}

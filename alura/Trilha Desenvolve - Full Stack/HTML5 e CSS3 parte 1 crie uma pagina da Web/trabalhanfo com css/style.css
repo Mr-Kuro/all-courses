@@ -1,0 +1,17 @@
+/*
+    Como representar cores no CSS
+    Através do nome da cor
+    Através do seu hexadecimal
+    Através do seu RGB
+*/
+body {
+  background: #cccccc;
+}
+
+p {
+  color: #705454;
+}
+
+em > strong {
+  color: coral;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens</title>
+</head>
+<body>
+    <p>Widith = largura</p>
+    <h1>Imagens Dinâmicas</h1>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="peq.png">
+        <source media="(max-width: 1050px)" srcset="med.png" type="image/png">
+        <img src="gran.png" alt="imagem de desenho">
+    </picture>
+
+    <h1>Audio</h1>
+    <p>O atributo "Preload" indica se o audio será pré-carregado ou não e aceita 3 valores:
+    <p>metadata: Carrega apenas as informações sobre o arquivo</p>
+    <p>none: Não vai carregar nada até que o usuario cique no play</p>
+    <p>auto: (padrão) vai carregar o arquivo de audio inteiro assim que página for carregada.</p>
+
+    <audio autoplay preload="metadata" controls loop>
+    <source src="nani.mp3" type="audio/mp3">
+    <source src="nani.mp3" type="audio/mp3">
+    <source src="nani.mp3" type="audio/mp3">
+    <p>ERRO: Infilizmante su navegador não suporta</p>
+    </audio>
+
+    <p>Teu navegadro não suporta?</p> <!--para ajudqar o usuario, disponibilizar o link para download-->
+    <a href="nani.mp3" download="nani.mp3" type="audio/mp3" target="_blank">Faz o sownload ae filho(a)</a>
+
+<hr>
+
+    <h1>video</h1>
+     
+    <!--poster="med.png"-->
+<video width="600" controls preload="none">
+    <source src="210.mp4" type="video/mp4">
+    <source src="vid.mp4a" type="video/mp4a">
+    <source src="vid.webm" type="video/wem">
+    <source src="vid.ogv" type="video/ogv">
+    <p>Infelismente su navegador não conseguiu carregar o video</p>
+</video>
+
+<p>
+<a href="210.mp4" download="210.mp4" type="video/mp4" target="_self"> Download do vídeo</a>
+</p>
+
+<p>
+    <iframe 
+     width="560" 
+     height="315"
+     src="https://www.youtube-nocookie.com/embed/jPB4FZ9IJXA"
+     title="YouTube video player" frameborder="0"
+     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+     allowfullscreen>
+    </iframe>
+</p>
+</html>

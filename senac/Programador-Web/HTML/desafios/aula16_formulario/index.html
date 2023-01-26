@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="formulario-style.css">
+</head>
+<body>
+        <div id="senac">
+            <h1>Formulário de pesquisa SENAC</h1>
+            <p>Obrigado por preencher esse formulário amigo! Você é um amigo.</p>
+        </div>
+    <form class="form" action="/form-data">
+        <div class="nome">
+            <label for="nome">Nome</label>
+            <input type="text" name="usuario_nome" maxlength="30" minlength="2" id="nome" required>
+        </div>
+        <div class="email">
+            <label for="e-mail">E-mail</label>
+            <input type="email" name="usuario_e-mail" maxlength="30" id="email" required>
+        </div>
+        <div class="idade">
+            <label for="idade">Idade</label>
+            <input type="number" max="99" min="13" id="idade" required>
+        </div>
+        <div class="ocupacao">
+            <label for="ocupacao">Qual opção melhor descreve sua ocupação?</label> <br>
+                <select aria-valuetext="" name="ocupacao" id="">
+                    <option value="disble" disabled selected>Selecione sua ocupação</option>
+                    <option value="Desenvolvedor">Desenvolvedor</option>
+                    <option value="Medico">Medico</option>
+                    <option value="Pastor">Pastor</option>
+                    <option value="Militar">Militar</option>
+                    <option value="Professor">Professor</option>
+                    <option value="VASP">VASP</option>
+                </select>
+        </div>
+        <div class="recomendacao">
+            <label for="recomendacao">Você recomendaria o senac?</label> <br>
+        
+            <input type="radio">Sim <br>
+            <input type="radio">Não <br>
+            <input type="radio">Talvez
+        </div>
+        <div class="curso">
+            <label for="melhor_curso">Qual o melhor curso do SENAC?</label> <br>
+                <select name="melhor_curso" id="melhor_curso">
+                    <div .curse>
+                    <option value="disble" disabled selected>Selecione uma opção</option>
+                    <option value="DEV WEB"> DEV WEB</option>
+                    <option value="DEV ANDROID">DEV ANDROID</option>
+                    <option value="Pastelaria">Pastelaria</option> 
+                    <option value="Excelência Em Vendas">Excelência Em Vendas</option>
+                    </div>
+                </select>
+        </div>
+        <div class="melhorias">
+            <label for="melhorias">O que você gostaria que melhorasse? <small>Selecione todas as opçês que se aplicam.</small></label> <br>
+            <input class="melhorar" type="checkbox">Front-end <br>
+            <input class="melhorar" type="checkbox">back-end <br>
+            <input class="melhorar" type="checkbox">Desafios <br>
+            <input class="melhorar" type="checkbox">Encontros presenciais <br>
+        </div>
+        <div class="msg">
+            <label for="msg">Mensagen</label>
+            <textarea name="msg" id="msg"></textarea>
+        </div>
+        <div class="button">
+            <button type="submit" >Enviar</button>
+        </div>
+    </form>
+</body>
+</html>

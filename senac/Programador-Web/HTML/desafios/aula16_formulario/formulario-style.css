@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+
+body{
+    background: linear-gradient(rgba(63, 43, 179, 0.73), rgba(23, 12, 75, 0.73)), url(https://image.freepik.com/fotos-gratis/mulher-africana-romantica-com-penteado-da-moda-sentado-no-local-de-trabalho-e-analisando-dados-retrato-interno-da-aluna-negra-trabalhando-com-o-laptop-antes-do-exame_197531-3782.jpg);
+
+background-size: cover;
+}
+
+#senac{
+    position: relative;
+    margin: auto;
+    width: 440px;
+    font-size: 30px;
+    color: #fff;
+}
+
+.curse{
+    color: black !important;
+}
+
+.nome{
+    padding: 1em;
+}
+
+.form{
+    position: relative;
+    margin: auto;
+    width: 440px;
+    padding: 1em;
+    border: 2px solid #fff;
+    border-radius: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(27, 3, 49, 0.6);
+}
+
+form div + div{
+    padding: 1em;
+}
+
+label{
+    position: relative;
+    left: -30;
+    color: #fff;
+    font-size: 18px;
+    text-align: left;
+}
+.melhorias, .recomendacao{
+    font-size: 16px;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#nome, #idade, #email{
+    display: block;
+    width: 400px;
+}
+
+div{
+    text-align: left;
+}
+.recomendacao, .melhorias{
+    padding-left: 1em;
+    color: #fff;
+}
+
+textarea{
+    width: 400px;
+    height: 40px;
+    max-width: 429px;
+    max-height: 50px;
+    min-width: 299.9;
+    min-height: 30px;
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button{position: relative;
+    color: #fff;
+    font-size: 20px;
+    width: 400px;
+    height: 30px;
+    background-color:greenyellow;
+}
+
+.ocupacao, .melhorias, .recomendacao, .curso, .melhorias, .msg{
+    
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: px;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Criando formulários</h1>
+    <!--GET: o navegador pede ao servidor para obter um recurso. o corpo da solicitação é enviado vazio e os
+    dados são anexados ao URL
+        POSt: o  navegador pede ao servidor uma resposta que consta os dados fornecidos no corpo da
+    imformação (+ seguro)-->
+
+    <form action="/pagina-processa-dados-do-form" method="POST">
+        <div>
+            <!--required: torna o preenchuiimento dos campoos do formulario obrigatorio
+                value: atribui um texto a caixa do formulário-->
+            <!--maxlenght: número máximo de caracteres
+                max: valor maximo de um numero-->
+            <!--minlenght: quantidade mínima de caracteres num texto
+                min: valor mínimo de um número-->
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" required maxlength="25" minlength="2" value="Nome Completo" name="nome_usuario">
+        </div>
+        <div>
+            <label for="E-mail">E-mail:</label>
+            <input type="email" id="email" required maxlength="50" name="email_usuario">
+        </div>
+        <div>
+            <label for="Mensagem">Mensagem:</label>
+            <textarea id="mensagem" required maxlength="100" name="usuario_mensagem"></textarea>
+        </div>
+        <div class="button">
+            <button type="submit">Enviar mensagem</button>
+        </div>
+    </form>
+
+    <h2>Enviar arquivos</h2>
+    <p>enctype</p>
+
+    <form method="post" enctype="multipart/form-data">
+    <input type="type" name="usuario_arquivo">
+    <button>Enviar arquivo</button>
+    </form>
+</body>
+</html>
