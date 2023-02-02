@@ -4,19 +4,28 @@
     <meta charset="UTF-8" />
     <title>Barbearia Alura</title>
 
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style-home.css" />
   </head>
 
   <body>
     <header>
-      <h1 class="titulo-principal">Barbearia Alura</h1> 
+      <div class="caixa">
+        <h1><img src="logo.png" alt="logo da barbearia" /></h1>
+
+        <nav class="nav-header">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="produtos.html">Produros</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <img id="banner" src="banner.jpg" alt="banner barbearia" />
 
     <div class="principal">
-      <h2 class="titulo-centralizado">
-        Sobre a Barbearia Alura
-      </h2>
+      <h2 class="titulo-centralizado">Sobre a Barbearia Alura</h2>
 
       <p style="font-size: 20px">
         No coração da cidade a <strong>Barbearia Alura</strong> traz para o
@@ -62,9 +71,12 @@
         <li class="itens">Localização</li>
         <li class="itens">Profissionais</li>
       </ul>
-      
-      <img class="imagem-beneficios" src="beneficios.jpg" alt="beneficios img">
+
+      <img
+        class="imagem-beneficios"
+        src="beneficios.jpg"
+        alt="beneficios img"
+      />
     </div>
-    
   </body>
 </html>
