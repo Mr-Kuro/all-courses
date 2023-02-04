@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+body{
+  font-family: 'Montserrat', sans-serif;
+}
 header {
   background: #bbb;
   padding: 20px 0;
@@ -93,8 +97,7 @@ footer {
 }
 
 main {
-  width: 940px;
-  margin: auto;
+
 }
 
 form {
@@ -160,6 +163,21 @@ form legend {
   text-align: center;
   font-size: 2em;
   margin: 0 0 1em;
+  clear: left;
+  color: rgb(0, 0, 0, 3);
+  transition: text-shadow 0.4s;
+}
+
+.titulo-principal:hover{
+  text-shadow:  2px 2px 5px #5d5b5b;
+
+}
+
+.principal{
+  padding: 3em 0;
+  background: #fefefe;
+  width: 940px;
+  margin: auto;
 }
 
 .principal p{
@@ -174,7 +192,102 @@ form legend {
   font-style: italic;
 }
 
+.utensilios-img{
+  width: 120px;
+  float: left;
+  margin: 0 20px 20px 0;
+}
+
+.mapa{
+  padding: 3em 0;
+  background: linear-gradient(#fefefe, #888888);
+}
+
+.mapa-conteudo{
+  width: 940px;
+  margin: 0 auto;
+  box-shadow: 10px 10px 30px #555555;
+}
+
+.mapa p{
+  margin: 0 0 2em;
+  text-align: center;
+}
+
+
+/* .beneficios ul{
+  vertical-align: top;
+  display: inline-block;
+  list-style: disc;
+  margin: 0 2em 0 0
+}
+
+.beneficios li{
+  list-style: cjk-ideographic;
+  margin: 0 0 1em;
+} */
+
+.beneficios{
+  padding: 3em 0;
+  background: #888888
+
+}
+
+.conteudo-beneficios{
+  width: 640px;
+  margin: 0 auto;
+}
+
+.lista-beneficios{
+  width: 40%;
+  display: inline-block !important;
+  vertical-align: top;
+}
+
+.itens{
+  line-height: 1.5;
+}
+
+.itens::before{
+  content: "☆";
+}
+
+.itens:nth-child(1){
+  font-weight: bold;
+}
+
 .imagem-beneficios{
+  display: inline-block;
   width: 60%;
-  
+  opacity: 100%;
+  transition: 0.4s;
+  box-shadow: 25px 15px 1em #555555;
+}
+
+.imagem-beneficios:hover{
+  opacity: 70%;
+  box-shadow: -15px 25px 1em 10px #555555;
+}
+.video{
+  width: 560px;
+  margin: 2em auto;
+}
+
+@media screen and (max-width:480px){
+  .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video{
+    width: auto;
+  }
+
+
+  h1{
+    text-align: center;
+  }
+
+  nav{
+    position: static;
+  }
+
+  .imagem-beneficios, .lista-beneficios -beneficios{
+    width: 100%
+  }
 }
